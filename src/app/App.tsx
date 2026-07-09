@@ -1329,8 +1329,8 @@ function Dashboard() {
                 }}
                 labelStyle={{ color: "#e8edf5" }}
                 itemStyle={{ color: "#0dd9c4" }}
-                formatter={(v: number) => [
-                  `₹${(v / 100000).toFixed(1)}L`,
+                formatter={(value) => [
+                  `₹${(Number(value ?? 0) / 100000).toFixed(1)}L`,
                   "Revenue",
                 ]}
               />
@@ -1509,7 +1509,7 @@ function Dashboard() {
               }}
               labelStyle={{ color: "#e8edf5" }}
               itemStyle={{ color: "#7c3aed" }}
-              formatter={(v: number) => [v, "Rating"]}
+              formatter={(value) => [Number(value ?? 0), "Rating"]}
             />
             <Bar dataKey="rating" radius={[4, 4, 0, 0]}>
               {SUPPLIERS.slice(0, 7).map((_, i) => (
