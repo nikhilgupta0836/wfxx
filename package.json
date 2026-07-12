@@ -2,6 +2,7 @@
   "name": "@figma/my-make-file",
   "private": true,
   "version": "0.0.1",
+  "packageManager": "pnpm@11.11.0",
   "type": "module",
   "scripts": {
     "build": "vite build",
@@ -63,7 +64,7 @@
     "sonner": "2.0.3",
     "tailwind-merge": "3.2.0",
     "tw-animate-css": "1.3.8",
-    "typescript": "^7.0.2",
+    "typescript": "^5.8.3",
     "vaul": "1.1.2"
   },
   "devDependencies": {
@@ -85,11 +86,6 @@
     },
     "react-dom": {
       "optional": true
-    }
-  },
-  "pnpm": {
-    "overrides": {
-      "vite": "6.3.5"
     }
   }
 }
